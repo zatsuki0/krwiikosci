@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://lknh7ie7s14h"]
+
+[ext_resource type="Script" uid="uid://lpqu5js5hb6i" path="res://control.gd" id="1_0fbet"]
+[ext_resource type="PackedScene" uid="uid://cd2ukirryie1i" path="res://Minimap.tscn" id="2_62e2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtu10"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 1, 1, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Control" type="Control" unique_id=954406496]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="Panel" type="Panel" parent="." unique_id=811483953]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qtu10")
+
+[node name="Minimap" parent="Panel" unique_id=1091308800 instance=ExtResource("2_62e2m")]
+layout_mode = 1

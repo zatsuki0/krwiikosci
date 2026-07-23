@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TileType" format=3 uid="uid://b1ax3vfi3av6h"]
+
+[ext_resource type="Script" uid="uid://cf2p36sm2vslf" path="res://resource classes/tile_type.gd" id="1_ep1rj"]
+
+[resource]
+script = ExtResource("1_ep1rj")
+weight = 0.25
+id = 69
+tile_name = "S2EW"
+east = 1
+south = 2
+west = 1
+metadata/_custom_type_script = "uid://cf2p36sm2vslf"

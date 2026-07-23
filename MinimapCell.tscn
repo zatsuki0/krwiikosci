@@ -1,0 +1,214 @@
+[gd_scene format=3 uid="uid://dqs4hbglw3uvc"]
+
+[ext_resource type="Script" uid="uid://12tfjut3ia6k" path="res://minimap_cell.gd" id="1_dh2x1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h82ig"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.8689852, 0.8689848, 0.8689849, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pdhri"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0.38431373, 0.1882353, 1)
+border_color = Color(4.3317675e-07, 0.6603387, 0.2894401, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6ehv"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dh2x1"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.09620469, 0.096204765, 0.09620472, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7cwg"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.8388973, 0.838897, 0.838897, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1fbv"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="MinimapCell" type="Control" unique_id=1229162271]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1112.0
+offset_bottom = -608.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dh2x1")
+
+[node name="Cell" type="Panel" parent="." unique_id=549732632]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_h82ig")
+
+[node name="checked" type="Panel" parent="Cell" unique_id=893611253]
+visible = false
+z_index = 3
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 34.0
+offset_bottom = 34.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pdhri")
+
+[node name="overlay" type="Panel" parent="Cell" unique_id=1849150740]
+z_index = 2
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_e6ehv")
+
+[node name="door0" type="Panel" parent="Cell" unique_id=73549359]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 40.0
+offset_bottom = 3.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dh2x1")
+
+[node name="empty" type="Panel" parent="Cell/door0" unique_id=1103032179]
+z_index = 1
+layout_mode = 0
+offset_left = 12.0
+offset_right = 26.0
+offset_bottom = 3.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a7cwg")
+
+[node name="door1" type="Panel" parent="Cell" unique_id=1790151822]
+layout_mode = 0
+offset_left = 40.0
+offset_right = 80.0
+offset_bottom = 3.0
+rotation = 1.5707964
+theme_override_styles/panel = SubResource("StyleBoxFlat_dh2x1")
+
+[node name="empty" type="Panel" parent="Cell/door1" unique_id=393890424]
+z_index = 1
+layout_mode = 0
+offset_left = 12.43325
+offset_right = 27.56675
+offset_bottom = 3.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a7cwg")
+
+[node name="door2" type="Panel" parent="Cell" unique_id=1143159887]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dh2x1")
+
+[node name="empty" type="Panel" parent="Cell/door2" unique_id=1297038803]
+z_index = 1
+layout_mode = 0
+offset_left = 13.0
+offset_right = 27.0
+offset_bottom = 3.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a7cwg")
+
+[node name="door3" type="Panel" parent="Cell" unique_id=1745577662]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 43.0
+offset_bottom = 3.0
+rotation = 1.5707964
+theme_override_styles/panel = SubResource("StyleBoxFlat_dh2x1")
+
+[node name="empty" type="Panel" parent="Cell/door3" unique_id=1827275239]
+z_index = 1
+layout_mode = 0
+offset_left = 12.349352
+offset_right = 27.650648
+offset_bottom = 2.9999995
+theme_override_styles/panel = SubResource("StyleBoxFlat_a7cwg")
+
+[node name="wall0" type="Panel" parent="Cell" unique_id=1785468737]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 3.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_p1fbv")
+
+[node name="wall1" type="Panel" parent="Cell" unique_id=2072806529]
+layout_mode = 0
+offset_left = 40.0
+offset_right = 80.0
+offset_bottom = 3.0
+rotation = 1.5707964
+theme_override_styles/panel = SubResource("StyleBoxFlat_p1fbv")
+
+[node name="wall2" type="Panel" parent="Cell" unique_id=117277842]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_p1fbv")
+
+[node name="wall3" type="Panel" parent="Cell" unique_id=46232077]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 43.0
+offset_bottom = 3.0
+rotation = 1.5707964
+theme_override_styles/panel = SubResource("StyleBoxFlat_p1fbv")
+
+[node name="Flag" type="Label" parent="." unique_id=1029669410]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.12955844, 0.12955847, 0.12955844, 1)
+theme_override_font_sizes/font_size = 8
+text = "N/A"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

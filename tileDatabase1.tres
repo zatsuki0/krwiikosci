@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="TileDatabase" format=3 uid="uid://kfxhbmouw4xe"]
+
+[ext_resource type="Script" uid="uid://cf2p36sm2vslf" path="res://resource classes/tile_type.gd" id="1_pj0lm"]
+[ext_resource type="Script" uid="uid://ckedic6e86ob3" path="res://resource classes/tile_database.gd" id="2_cdfa1"]
+[ext_resource type="Resource" uid="uid://li5x6vedndsm" path="res://tiles/0/E0.tres" id="3_fs1xb"]
+[ext_resource type="Resource" uid="uid://bxuyh57imtkdc" path="res://tiles/1E/1E.tres" id="3_laxno"]
+[ext_resource type="Resource" uid="uid://g5o4mgel0yfx" path="res://tiles/1N/1N.tres" id="3_uxio6"]
+[ext_resource type="Resource" uid="uid://buv2ltluufy3o" path="res://tiles/1N/E1N.tres" id="4_6oq0b"]
+[ext_resource type="Resource" uid="uid://buyl3gchoqavk" path="res://tiles/0/ES0.tres" id="4_008xd"]
+[ext_resource type="Resource" uid="uid://drjti6gia8ir0" path="res://tiles/1E/N1E.tres" id="4_m1x3d"]
+[ext_resource type="Resource" uid="uid://c35mdd6t66q6" path="res://tiles/1E/NS1E.tres" id="5_2e4de"]
+[ext_resource type="Resource" uid="uid://heivmjow1htl" path="res://tiles/1N/ES1N.tres" id="5_di748"]
+[ext_resource type="Resource" uid="uid://cbt0ienig4755" path="res://tiles/0/ESW0.tres" id="5_jn5oe"]
+[ext_resource type="Resource" uid="uid://ceantg1x4remj" path="res://tiles/1N/ESW1N.tres" id="6_lpjqo"]
+[ext_resource type="Resource" uid="uid://be6ge8aa26qpw" path="res://tiles/0/EW0.tres" id="6_o0g1x"]
+[ext_resource type="Resource" uid="uid://cul4u5mxyxvfa" path="res://tiles/1E/NSW1E.tres" id="6_wwehd"]
+[ext_resource type="Resource" uid="uid://bbptnw4fy7bkg" path="res://tiles/0/N0.tres" id="7_6v8qa"]
+[ext_resource type="Resource" uid="uid://cjfddt4vppo3x" path="res://tiles/1N/EW1N.tres" id="7_jwyvm"]
+[ext_resource type="Resource" uid="uid://belbihlncyqo" path="res://tiles/1E/NW1E.tres" id="7_maoam"]
+[ext_resource type="Resource" uid="uid://cb4p8im5prnmt" path="res://tiles/1E/S1E.tres" id="8_cic5f"]
+[ext_resource type="Resource" uid="uid://d3f04gnvht7ai" path="res://tiles/0/NE0.tres" id="8_pxxf2"]
+[ext_resource type="Resource" uid="uid://bgwhf3ev7rk0q" path="res://tiles/1N/S1N.tres" id="8_q3nwu"]
+[ext_resource type="Resource" uid="uid://dr13f7hht4ivc" path="res://tiles/1N/SW1N.tres" id="9_ghkpm"]
+[ext_resource type="Resource" uid="uid://bmpfhd57k646e" path="res://tiles/1E/SW1E.tres" id="9_tsvyv"]
+[ext_resource type="Resource" uid="uid://bqch2gxaqsihn" path="res://tiles/0/NES0.tres" id="9_yc03i"]
+[ext_resource type="Resource" uid="uid://drjmm7vgv7cmy" path="res://tiles/1N/W1N.tres" id="10_6r6cj"]
+[ext_resource type="Resource" uid="uid://duuptqfa0mr3i" path="res://tiles/0/NESW0.tres" id="10_4432t"]
+[ext_resource type="Resource" uid="uid://63rjwjaheun8" path="res://tiles/1E/W1E.tres" id="10_ibd1c"]
+[ext_resource type="Resource" uid="uid://tysorecwhw48" path="res://tiles/0/NEW0.tres" id="11_uxio6"]
+[ext_resource type="Resource" uid="uid://8s3imu5nshwx" path="res://tiles/0/NS0.tres" id="12_6oq0b"]
+[ext_resource type="Resource" uid="uid://cxnrrg0qlyp6g" path="res://tiles/0/NSW0.tres" id="13_di748"]
+[ext_resource type="Resource" uid="uid://cnywrouqk5dqc" path="res://tiles/0/NW0.tres" id="14_lpjqo"]
+[ext_resource type="Resource" uid="uid://c5uc16ymuy1m5" path="res://tiles/0/S0.tres" id="15_jwyvm"]
+[ext_resource type="Resource" uid="uid://dd08ey3h5urwd" path="res://tiles/0/SW0.tres" id="16_q3nwu"]
+[ext_resource type="Resource" uid="uid://b138sdw003fl0" path="res://tiles/0/W0.tres" id="17_ghkpm"]
+[ext_resource type="Resource" uid="uid://c0widxymbvfl0" path="res://tiles/1S/1S.tres" id="19_ns7fy"]
+[ext_resource type="Resource" uid="uid://d280w8feotsu4" path="res://tiles/1S/E1S.tres" id="20_xku3p"]
+[ext_resource type="Resource" uid="uid://dakdkfkfct0wu" path="res://tiles/1S/EW1S.tres" id="21_o803v"]
+[ext_resource type="Resource" uid="uid://4blsg7gi7hbv" path="res://tiles/1S/N1S.tres" id="22_od4ir"]
+[ext_resource type="Resource" uid="uid://dg7c6s5ntr6tg" path="res://tiles/1S/NE1S.tres" id="23_mg0r0"]
+[ext_resource type="Resource" uid="uid://dfll2wkc4hsiw" path="res://tiles/1S/NEW1S.tres" id="24_1rta8"]
+[ext_resource type="Resource" uid="uid://bygyiojdrq4h2" path="res://tiles/1S/NW1S.tres" id="25_hbovb"]
+[ext_resource type="Resource" uid="uid://c1te0dqnyrak" path="res://tiles/1S/W1S.tres" id="26_clgy8"]
+[ext_resource type="Resource" uid="uid://bh1ag2fk0135c" path="res://tiles/1W/1W.tres" id="27_1xnb0"]
+[ext_resource type="Resource" uid="uid://d3mlncnujwhry" path="res://tiles/1W/E1W.tres" id="28_ahh3x"]
+[ext_resource type="Resource" uid="uid://cd4qicvcam2o8" path="res://tiles/1W/ES1W.tres" id="29_06ggj"]
+[ext_resource type="Resource" uid="uid://beyhbqvcrcyop" path="res://tiles/1W/N1W.tres" id="30_yqjuw"]
+[ext_resource type="Resource" uid="uid://dk8yuv4egs2fd" path="res://tiles/1W/NE1W.tres" id="31_50byb"]
+[ext_resource type="Resource" uid="uid://bnng1rypn2x6k" path="res://tiles/1W/NES1W.tres" id="32_o8ykm"]
+[ext_resource type="Resource" uid="uid://dgejjq0qfs288" path="res://tiles/1W/NS1W.tres" id="33_3j7fr"]
+[ext_resource type="Resource" uid="uid://c77wcwwc7iil7" path="res://tiles/1W/S1W.tres" id="34_pex6o"]
+[ext_resource type="Resource" uid="uid://ddg8x3ht2hc83" path="res://tiles/special/walls.tres" id="40_m1x3d"]
+[ext_resource type="Resource" uid="uid://cv5di0ra1t021" path="res://tiles/3ESW/3ESW.tres" id="45_51ynt"]
+[ext_resource type="Resource" uid="uid://glsov6g2g1iv" path="res://tiles/3ESW/N3ESW.tres" id="46_551es"]
+[ext_resource type="Resource" uid="uid://cngdcs08b5386" path="res://tiles/3NES/3NES.tres" id="47_vq6rl"]
+[ext_resource type="Resource" uid="uid://b47ikb2keio3x" path="res://tiles/3NES/W3NES.tres" id="48_n0cwp"]
+[ext_resource type="Resource" uid="uid://cmimajoyaek4b" path="res://tiles/3NEW/3NEW.tres" id="49_a316n"]
+[ext_resource type="Resource" uid="uid://b55ahu758mike" path="res://tiles/3NEW/S3NEW.tres" id="50_myrri"]
+[ext_resource type="Resource" uid="uid://dbn66b8qolb4m" path="res://tiles/3NSW/3NSW.tres" id="51_ohxtk"]
+[ext_resource type="Resource" uid="uid://chyg1yhhrkgnp" path="res://tiles/3NSW/E3NSW.tres" id="52_2cdxl"]
+[ext_resource type="Resource" uid="uid://cad7f50vrfyd0" path="res://tiles/2ES/2ES.tres" id="59_maitg"]
+[ext_resource type="Resource" uid="uid://cg4nyt411x7jv" path="res://tiles/2ES/N2ES.tres" id="60_m0pbf"]
+[ext_resource type="Resource" uid="uid://bq4k6n2r02712" path="res://tiles/2ES/NW2ES.tres" id="61_yjq2n"]
+[ext_resource type="Resource" uid="uid://bpelxv4dr03e8" path="res://tiles/2ES/W2ES.tres" id="62_iawwi"]
+[ext_resource type="Resource" uid="uid://cy5321jdvtpod" path="res://tiles/2EW/2EW.tres" id="63_agyym"]
+[ext_resource type="Resource" uid="uid://c7ud6rlxkl4kq" path="res://tiles/2EW/N2EW.tres" id="64_0na6q"]
+[ext_resource type="Resource" uid="uid://b6v1vuj38ld00" path="res://tiles/2EW/NS2EW.tres" id="65_s0qb2"]
+[ext_resource type="Resource" uid="uid://b1ax3vfi3av6h" path="res://tiles/2EW/S2EW.tres" id="66_pbw36"]
+[ext_resource type="Resource" uid="uid://6x8s870gnte3" path="res://tiles/2NE/2NE.tres" id="67_crnr7"]
+[ext_resource type="Resource" uid="uid://dvfdord5g8tv5" path="res://tiles/2NE/S2NE.tres" id="68_flc3i"]
+[ext_resource type="Resource" uid="uid://cc62iu4jnpil0" path="res://tiles/2NE/SW2NE.tres" id="69_l8c47"]
+[ext_resource type="Resource" uid="uid://c6t3k3pcgpbcc" path="res://tiles/2NE/W2NE.tres" id="70_txpkc"]
+[ext_resource type="Resource" uid="uid://4klavxoaejbv" path="res://tiles/2NS/2NS.tres" id="71_welh3"]
+[ext_resource type="Resource" uid="uid://c62htuswp62by" path="res://tiles/2NS/E2NS.tres" id="72_oqcpv"]
+[ext_resource type="Resource" uid="uid://bltwqnem715ws" path="res://tiles/2NS/EW2NS.tres" id="73_iy8pd"]
+[ext_resource type="Resource" uid="uid://db8rk1v7oq46d" path="res://tiles/2NS/W2NS.tres" id="74_plcaa"]
+[ext_resource type="Resource" uid="uid://cv6pj77okhnm0" path="res://tiles/2NW/2NW.tres" id="75_qiic6"]
+[ext_resource type="Resource" uid="uid://r2telffsj3fa" path="res://tiles/2NW/E2NW.tres" id="76_1c7ud"]
+[ext_resource type="Resource" uid="uid://gwjbcb2p1yyn" path="res://tiles/2NW/ES2NW.tres" id="77_3284f"]
+[ext_resource type="Resource" uid="uid://d2ed8jyn5co4h" path="res://tiles/2NW/S2NW.tres" id="78_1id85"]
+[ext_resource type="Resource" uid="uid://c240pf60go61j" path="res://tiles/2SW/2SW.tres" id="79_asuts"]
+[ext_resource type="Resource" uid="uid://cgvr2cpgux55g" path="res://tiles/2SW/E2SW.tres" id="80_luovg"]
+[ext_resource type="Resource" uid="uid://dku3j1bqyff8i" path="res://tiles/2SW/N2SW.tres" id="81_67dih"]
+[ext_resource type="Resource" uid="uid://n85ib7slj5n0" path="res://tiles/2SW/NE2SW.tres" id="82_n5shs"]
+
+[resource]
+script = ExtResource("2_cdfa1")
+one = 5.0
+two = 1.0
+three = 0.05
+four = 0.05
+one_missing = 3.0
+two_missing = 0.05
+three_missing = 0.05
+special = Array[ExtResource("1_pj0lm")]([ExtResource("40_m1x3d")])
+one_door = Array[ExtResource("1_pj0lm")]([ExtResource("3_fs1xb"), ExtResource("7_6v8qa"), ExtResource("15_jwyvm"), ExtResource("17_ghkpm")])
+two_doors = Array[ExtResource("1_pj0lm")]([ExtResource("4_008xd"), ExtResource("6_o0g1x"), ExtResource("8_pxxf2"), ExtResource("12_6oq0b"), ExtResource("14_lpjqo"), ExtResource("16_q3nwu")])
+three_doors = Array[ExtResource("1_pj0lm")]([ExtResource("5_jn5oe"), ExtResource("9_yc03i"), ExtResource("11_uxio6"), ExtResource("13_di748")])
+four_doors = Array[ExtResource("1_pj0lm")]([ExtResource("10_4432t")])
+missing_north = Array[ExtResource("1_pj0lm")]([ExtResource("3_uxio6"), ExtResource("4_6oq0b"), ExtResource("5_di748"), ExtResource("6_lpjqo"), ExtResource("7_jwyvm"), ExtResource("8_q3nwu"), ExtResource("9_ghkpm"), ExtResource("10_6r6cj")])
+missing_east = Array[ExtResource("1_pj0lm")]([ExtResource("3_laxno"), ExtResource("4_m1x3d"), ExtResource("5_2e4de"), ExtResource("6_wwehd"), ExtResource("7_maoam"), ExtResource("8_cic5f"), ExtResource("9_tsvyv"), ExtResource("10_ibd1c")])
+missing_south = Array[ExtResource("1_pj0lm")]([ExtResource("19_ns7fy"), ExtResource("20_xku3p"), ExtResource("21_o803v"), ExtResource("22_od4ir"), ExtResource("23_mg0r0"), ExtResource("24_1rta8"), ExtResource("25_hbovb"), ExtResource("26_clgy8")])
+missing_west = Array[ExtResource("1_pj0lm")]([ExtResource("27_1xnb0"), ExtResource("28_ahh3x"), ExtResource("29_06ggj"), ExtResource("30_yqjuw"), ExtResource("31_50byb"), ExtResource("32_o8ykm"), ExtResource("33_3j7fr"), ExtResource("34_pex6o")])
+two_missing_tiles = Array[ExtResource("1_pj0lm")]([ExtResource("59_maitg"), ExtResource("60_m0pbf"), ExtResource("61_yjq2n"), ExtResource("62_iawwi"), ExtResource("63_agyym"), ExtResource("64_0na6q"), ExtResource("65_s0qb2"), ExtResource("66_pbw36"), ExtResource("67_crnr7"), ExtResource("68_flc3i"), ExtResource("69_l8c47"), ExtResource("70_txpkc"), ExtResource("71_welh3"), ExtResource("72_oqcpv"), ExtResource("73_iy8pd"), ExtResource("74_plcaa"), ExtResource("75_qiic6"), ExtResource("76_1c7ud"), ExtResource("77_3284f"), ExtResource("78_1id85"), ExtResource("79_asuts"), ExtResource("80_luovg"), ExtResource("81_67dih"), ExtResource("82_n5shs")])
+three_missing_tiles = Array[ExtResource("1_pj0lm")]([ExtResource("45_51ynt"), ExtResource("46_551es"), ExtResource("47_vq6rl"), ExtResource("48_n0cwp"), ExtResource("49_a316n"), ExtResource("50_myrri"), ExtResource("51_ohxtk"), ExtResource("52_2cdxl")])
+metadata/_custom_type_script = "uid://ckedic6e86ob3"

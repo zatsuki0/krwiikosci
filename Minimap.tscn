@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cd2ukirryie1i"]
+
+[ext_resource type="Script" uid="uid://dio521d2isgq8" path="res://minimap.gd" id="1_ttd1e"]
+
+[node name="Minimap" type="Control" unique_id=1091308800]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ttd1e")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1389986305]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 40

@@ -72,8 +72,11 @@ func _ready():
 # multithreaded
 
 var dungeon
-var dungeon_width = 5
-var dungeon_height = 5
+var dungeon_width = 6
+var dungeon_height = 6
+var min_room_count = 7
+var max_room_count = 15
+var distance_to_boss = 3
 
 var result_dungeon = null
 var mutex := Mutex.new()
@@ -179,9 +182,6 @@ func generate_dungeon(dungeon):
 func check_dungeon(dungeon) -> bool:
 	var non_wall_count = dungeon.count_non_wall_cells()
 
-	var min_room_count = 7
-	var max_room_count = 15
-
 	if non_wall_count <= min_room_count:
 		return false
 
@@ -203,7 +203,7 @@ func check_dungeon(dungeon) -> bool:
 		boss
 	)
 
-	if distance < 3:
+	if distance < distance_to_boss:
 		return false
 
 	return true

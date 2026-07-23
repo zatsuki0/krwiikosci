@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dqs4hbglw3uvc"]
 
-[ext_resource type="Script" uid="uid://12tfjut3ia6k" path="res://minimap_cell.gd" id="1_dh2x1"]
+[ext_resource type="Script" uid="uid://12tfjut3ia6k" path="res://dungeon scripts/minimap_cell.gd" id="1_dh2x1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h82ig"]
 content_margin_left = 0.0

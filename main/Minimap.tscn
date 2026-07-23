@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cd2ukirryie1i"]
 
-[ext_resource type="Script" uid="uid://dio521d2isgq8" path="res://minimap.gd" id="1_ttd1e"]
+[ext_resource type="Script" uid="uid://dio521d2isgq8" path="res://dungeon scripts/minimap.gd" id="1_ttd1e"]
 
 [node name="Minimap" type="Control" unique_id=1091308800]
 layout_mode = 3

@@ -18,6 +18,12 @@ config/icon="res://icon.svg"
 [autoload]
 
 global="*uid://onxabbx5qla4"
+BattleManager="*uid://djqmbwykvxc68"
+SceneManager="*uid://bglamynsokf2j"
+UiManager="*uid://bjy2j3yq4n1rb"
+SaveManager="*uid://dpqtuh0rbhlp3"
+DialogueManager="*uid://ignu5li5os72"
+AudoManager="*uid://3f8bd8nlx6v8"
 
 [display]
 

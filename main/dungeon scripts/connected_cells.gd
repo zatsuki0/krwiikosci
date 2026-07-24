@@ -1,7 +1,7 @@
 extends RefCounted
 class_name ConnectedCells
 
-#this script checks has a function that gives out groups of cells that are connected
+# script that has many useful functions regarding space 
 
 const OFFSETS = {
 	"north": Vector2i(0, -1),

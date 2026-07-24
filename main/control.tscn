@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://lknh7ie7s14h"]
 
-[ext_resource type="Script" uid="uid://lpqu5js5hb6i" path="res://control.gd" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://bvgt1vo5jvr25" path="res://main scripts/GAME_MANAGER.gd" id="1_62e2m"]
 [ext_resource type="PackedScene" uid="uid://cd2ukirryie1i" path="res://Minimap.tscn" id="2_62e2m"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtu10"]
@@ -15,14 +15,14 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[node name="Control" type="Control" unique_id=954406496]
+[node name="Game" type="Control" unique_id=954406496]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_0fbet")
+script = ExtResource("1_62e2m")
 
 [node name="Panel" type="Panel" parent="." unique_id=811483953]
 layout_mode = 0

@@ -6,6 +6,10 @@ var character: PlayerCharacter
 var limbs: Array[Limb] = []
 
 
+func _init(name: String, background: String):
+	ready
+
+
 func _ready():
 	if data == null:
 		data = PlayerData.new()

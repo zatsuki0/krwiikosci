@@ -1,6 +1,6 @@
 extends Control
 
-@onready var grid_container = get_child(0)
+@onready var grid_container 
 var minimap_cell_scene = preload("res://MinimapCell.tscn")
 var wall_resc = load('res://tiles/special/walls.tres')
 
@@ -10,8 +10,10 @@ var height = 0
 var cell_grid
 
 func generateMinimap(Width, Height):
+	print("generate minimap")
 	width = Width
 	height = Height
+	grid_container = get_child(0)
 	grid_container.columns = width
 	
 	for y in range(height):

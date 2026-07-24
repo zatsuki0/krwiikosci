@@ -22,10 +22,10 @@ func add_mutation(mutation: String):
 
 
 func update():
-	if data.destroyed:
+	if data.missing:
 		node.destroy()
 
-	node.refresh(data)
+	# node.refresh()
 	
 
 func take_damage(amount: float):
@@ -39,6 +39,10 @@ func take_damage(amount: float):
 		break_limb()
 
 	data.emit_changed()
+
+
+func attack(enemy_limb: Limb):
+	return
 
 
 func heal(amount: float):

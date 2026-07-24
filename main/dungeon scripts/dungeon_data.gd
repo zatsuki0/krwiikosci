@@ -10,11 +10,7 @@ var cords_of_starting_cell: Vector2i
 var wall_resc = load("res://tiles/special/walls.tres")
 
 
-func _init(
-	width: int = 0,
-	height: int = 0,
-	starting_cell: Vector2i = Vector2i.ZERO
-):
+func _init(width: int = 0, height: int = 0, starting_cell: Vector2i = Vector2i.ZERO):
 	self.width = width
 	self.height = height
 	self.cords_of_starting_cell = starting_cell

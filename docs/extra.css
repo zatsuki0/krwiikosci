@@ -1,0 +1,13 @@
+.function {
+  color: #3F51B5;
+}
+.class {
+  color: #F44336;
+}
+
+.mermaid {
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 8px;
+  padding: 16px;
+  background-color: var(--md-default-bg-color);
+}

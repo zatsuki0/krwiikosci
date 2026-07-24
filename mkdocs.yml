@@ -1,0 +1,61 @@
+site_name: Documentation
+site_url: https://main.site
+hooks:
+  - hooks.py
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  icon:
+    logo: fontawesome/solid/skull
+  favicon: fontawesome/solid/skull # doesnt work
+  features:
+    - navigation.indexes
+    - navigation.footer
+  palette:
+    # dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+      primary: red
+      accent: indigo
+
+    # light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: red
+      accent: indigo
+
+extra_css:
+  - extra.css
+
+nav:
+  - Dungeon:
+      - dungeon/index.md
+      - Data: dungeon/dungeon_data.md
+      - Generator: dungeon/dungeon_generator.md
+      - Node: dungeon/dungeon_node.md
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+

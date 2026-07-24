@@ -23,7 +23,7 @@ func generate():
 	return data
 
 
-func get_cell(pos: Vector2i) -> Cell:
+func get_cell(pos: Vector2i) -> DungeonCell:
 	if data == null:
 		return null
 	return data.get_cell(pos)

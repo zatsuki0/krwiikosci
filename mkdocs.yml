@@ -39,6 +39,15 @@ nav:
       - Data: dungeon/dungeon_data.md
       - Generator: dungeon/dungeon_generator.md
       - Node: dungeon/dungeon_node.md
+      - Cell: dungeon/dungeon_cell.md
+  - Player:
+      - player/index.md
+      - Data: player/player_data.md
+      - Character: player/player_character.md
+      - Limb:
+          - player/limb/index.md
+          - Data: player/limb/limb_data.md
+          - Node: player/limb/limb_node.md
 
 markdown_extensions:
   - attr_list

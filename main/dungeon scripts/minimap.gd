@@ -41,9 +41,9 @@ func updateMinimap(grid):
 			var cell = grid[Vector2i(x, y)]
 			minimap_cell.get_child(1).add_theme_color_override("font_color", Color.BLACK)
 				
-			if Cell.Flag.find_key(cell.flag) != 'NONE':
+			if DungeonCell.Flag.find_key(cell.flag) != 'NONE':
 				minimap_cell.get_child(1).add_theme_color_override("font_color", Color.RED)
-			minimap_cell.get_child(1).text = Cell.Flag.find_key(cell.flag)
+			minimap_cell.get_child(1).text = DungeonCell.Flag.find_key(cell.flag)
 			
 			
 			

@@ -1,5 +1,5 @@
 extends Node
-class_name Cell
+class_name DungeonCell
 
 var collapsed = false
 var collapsable_resources: Array[Resource] = []

@@ -46,13 +46,13 @@ func print_grid(mode: String, border: bool = false):
 		print(row)
 
 
-func insert_static_cell(cell: Cell, cords: Vector2i):
+func insert_static_cell(cell: DungeonCell, cords: Vector2i):
 	cell.entropy = 1
 	cell.collapsed = true
 	grid[cords] = cell
 
 
-func get_cell(cords: Vector2i) -> Cell:
+func get_cell(cords: Vector2i) -> DungeonCell:
 	return grid.get(cords)
 
 

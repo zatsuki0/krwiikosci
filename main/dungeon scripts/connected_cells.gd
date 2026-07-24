@@ -177,7 +177,7 @@ static func get_cells_at_distance(grid: Dictionary, start: Vector2i, target_dist
 
 	return last_valid_frontier
 
-static func find_cell_with_flag(grid: Dictionary, start: Vector2i, flag_name: Cell.Flag):
+static func find_cell_with_flag(grid: Dictionary, start: Vector2i, flag_name: DungeonCell.Flag):
 	var visited := {}
 	var queue: Array[Vector2i] = []
 

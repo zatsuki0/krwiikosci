@@ -16,9 +16,9 @@ var wall_resc = load("res://tiles/special/walls.tres")
 
 var possible_boss_rescs
 
-var starting_cell: Cell
-var wall_cell: Cell
-var boss_cell: Cell
+var starting_cell: DungeonCell
+var wall_cell: DungeonCell
+var boss_cell: DungeonCell
 
 
 var mutex := Mutex.new()
@@ -49,17 +49,17 @@ func _init(
 
 	possible_boss_rescs = cell_database.one_door
 
-	starting_cell = Cell.new()
+	starting_cell = DungeonCell.new()
 	starting_cell.resc = starting_cell_resource
-	starting_cell.flag = Cell.Flag.START
+	starting_cell.flag = DungeonCell.Flag.START
 
-	wall_cell = Cell.new()
+	wall_cell = DungeonCell.new()
 	wall_cell.resc = wall_resc
-	wall_cell.flag = Cell.Flag.BORDER
+	wall_cell.flag = DungeonCell.Flag.BORDER
 
-	boss_cell = Cell.new()
+	boss_cell = DungeonCell.new()
 	boss_cell.resc = possible_boss_rescs.pick_random()
-	boss_cell.flag = Cell.Flag.BOSS
+	boss_cell.flag = DungeonCell.Flag.BOSS
 
 
 func generate() -> DungeonData:
@@ -80,7 +80,6 @@ func generate() -> DungeonData:
 		thread.wait_to_finish()
 
 	return result_dungeon
-
 
 
 func generate_dungeon_thread():
@@ -113,7 +112,7 @@ func generate_dungeon_thread():
 func create_grid(data: DungeonData):
 	for y in range(dungeon_height):
 		for x in range(dungeon_width):
-			data.grid[Vector2i(x,y)] = Cell.new()
+			data.grid[Vector2i(x,y)] = DungeonCell.new()
 
 	data.insert_static_cell(
 		starting_cell,
@@ -159,7 +158,6 @@ func create_grid(data: DungeonData):
 		)
 
 
-
 func generate_dungeon(data: DungeonData):
 	while true:
 		update_entropies(data)
@@ -176,7 +174,7 @@ func generate_dungeon(data: DungeonData):
 		data.cords_of_starting_cell
 	)
 	
-	var temporary_wall = Cell.new()
+	var temporary_wall = DungeonCell.new()
 	temporary_wall.resc = wall_resc
 	temporary_wall.collapsed = true
 	temporary_wall.entropy = 1
@@ -187,7 +185,6 @@ func generate_dungeon(data: DungeonData):
 				temporary_wall,
 				pos
 			)
-
 
 
 func update_entropies(data: DungeonData):
@@ -203,7 +200,6 @@ func update_entropies(data: DungeonData):
 				possible_cell_rescs,
 				pos
 			)
-
 
 
 func collapse_lowest_entropy_cell(data: DungeonData):
@@ -224,7 +220,6 @@ func collapse_lowest_entropy_cell(data: DungeonData):
 	data.get_cell(lowest_pos).collapse()
 
 
-
 func check_dungeon(data: DungeonData) -> bool:
 	var room_count = data.count_non_wall_cells()
 
@@ -237,7 +232,7 @@ func check_dungeon(data: DungeonData) -> bool:
 	var boss = ConnectedCells.find_cell_with_flag(
 		data.grid,
 		data.cords_of_starting_cell,
-		Cell.Flag.BOSS
+		DungeonCell.Flag.BOSS
 	)
 
 	if boss == null:
@@ -253,8 +248,6 @@ func check_dungeon(data: DungeonData) -> bool:
 		return false
 
 	return true
-
-
 
 
 func load_resources(path: String):

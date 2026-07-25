@@ -5,6 +5,23 @@ var data: PlayerData
 var character: PlayerCharacter
 var limbs: Array[Limb] = []
 
+enum Stat {
+	VITALITY,
+	VIGOUR,
+	RESILIENCE,
+	COMPREHENSION,
+	FEROCITY,
+	SUSCEPTIBILITY
+	}
+
+var base_stats: Dictionary = {
+	Stat.VITALITY: 0,
+	Stat.VIGOUR: 0,
+	Stat.RESILIENCE: 0,
+	Stat.COMPREHENSION: 0,
+	Stat.FEROCITY: 0,
+	Stat.SUSCEPTIBILITY: 0
+}
 
 func _init(name: String, background: String):
 	ready
@@ -58,7 +75,6 @@ func update_limb(limb:Limb):
 
 
 func update_health():
-
 	# Recalculate total health for body
 	var total := 0.0
 
@@ -70,8 +86,8 @@ func update_health():
 
 # placeholder for now
 func update_damage():
-
 	var damage := 0.0
+	
 	for limb in limbs:
 		
 		if limb.data.limb_type == LimbData.LimbType.ARM:
@@ -79,7 +95,6 @@ func update_damage():
 
 
 func update_movement():
-
 	var agility := 100.0
 
 	for limb in limbs:
@@ -91,7 +106,6 @@ func update_movement():
 
 
 func get_limb(type:LimbData.LimbType):
-
 	for limb in limbs:
 		if limb.data.limb_type == type:
 			return limb

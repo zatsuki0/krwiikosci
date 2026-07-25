@@ -1,10 +1,10 @@
 extends Node
 class_name Limb
 
-var data:LimbData
-var node:LimbNode
+var data: LimbData
+var node: LimbNode
 
-func setup(limb_data: LimbData, limb_node: LimbNode):
+func setup(limb_data: LimbData = LimbData.new(), limb_node: LimbNode = LimbNode.new()):
 	data = limb_data
 	node = limb_node
 

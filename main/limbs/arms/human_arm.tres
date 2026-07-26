@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LimbData" format=3 uid="uid://d3f7sbou020lp"]
+
+[ext_resource type="Script" uid="uid://reglth48ajq6" path="res://limb_data.gd" id="1_1mtxd"]
+
+[resource]
+script = ExtResource("1_1mtxd")
+id = "human_arm"
+display_name = "Human arm"
+description = "Arm that belonged to a human"
+limb_type = 2
+metadata/_custom_type_script = "uid://reglth48ajq6"

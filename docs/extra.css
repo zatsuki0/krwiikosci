@@ -25,17 +25,17 @@
 
 .variable_header {
     font-weight: bold;
-    border-bottom: 2px solid var(--md-default-fg-color--lightest);
+    border-bottom: 2px solid var(--md-default-fg-color--lighter);
     padding-bottom: 0.5rem;
 }
 
 .variable_line {
-    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    border-bottom: 1px solid var(--md-default-fg-color--lighter);
     padding: 0.5rem 0;
 }
 
 .variable_line span:first-child {
-    border: 1px solid var(--md-default-fg-color--lightest);
+    border: 1px solid var(--md-default-fg-color--lighter);
     border-radius: 4px;
     padding: 0.2rem 1rem;
     width: fit-content;

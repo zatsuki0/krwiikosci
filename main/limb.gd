@@ -1,8 +1,9 @@
-extends Node
+extends Resource
 class_name Limb
 
 var data: LimbData
 var node: LimbNode
+
 
 func setup(limb_data: LimbData = LimbData.new(), limb_node: LimbNode = LimbNode.new()):
 	data = limb_data

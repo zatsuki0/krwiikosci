@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="LimbData" format=3 uid="uid://pitfl771k3rp"]
+
+[ext_resource type="Script" uid="uid://reglth48ajq6" path="res://limb_data.gd" id="1_kfxqd"]
+
+[resource]
+script = ExtResource("1_kfxqd")
+id = "human_head"
+display_name = "Human head"
+description = "A head that belonged to a human."
+vitality = 2
+vigour = 1
+resilience = 1
+comprehension = 2
+mutation_capacity = 0
+metadata/_custom_type_script = "uid://reglth48ajq6"

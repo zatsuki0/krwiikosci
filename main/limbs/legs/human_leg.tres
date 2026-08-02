@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="LimbData" format=3 uid="uid://cgichm1uyyv1d"]
+
+[ext_resource type="Script" uid="uid://reglth48ajq6" path="res://limb_data.gd" id="1_raddw"]
+
+[resource]
+script = ExtResource("1_raddw")
+id = "human_leg"
+display_name = "Human leg"
+description = "A leg that belonged to a human."
+vitality = 1
+vigour = 2
+resilience = 1
+ferocity = 1
+susceptibility = 1
+limb_type = 3
+metadata/_custom_type_script = "uid://reglth48ajq6"

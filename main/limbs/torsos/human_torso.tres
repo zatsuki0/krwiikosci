@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="LimbData" format=3 uid="uid://b20nxb7s1wpnf"]
+
+[ext_resource type="Script" uid="uid://reglth48ajq6" path="res://limb_data.gd" id="1_yjrgg"]
+
+[resource]
+script = ExtResource("1_yjrgg")
+id = "human_torso"
+display_name = "Human Torso"
+description = "A torso of a human."
+vitality = 5
+resilience = 1
+susceptibility = 1
+limb_type = 1
+metadata/_custom_type_script = "uid://reglth48ajq6"

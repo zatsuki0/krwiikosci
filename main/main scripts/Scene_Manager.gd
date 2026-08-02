@@ -24,3 +24,6 @@ func leave_battle():
 
 	#change_world(previous_world)
 	#change_ui("res://UI/WorldUI.tscn")
+
+func enter_dungeon():
+	current_state = GameState.WORLD

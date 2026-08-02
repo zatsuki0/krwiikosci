@@ -2,5 +2,18 @@
 
 [ext_resource type="Script" uid="uid://caybtcmoacfyq" path="res://dungeon scripts/dungeon_node.gd" id="1_nulmw"]
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_miccs"]
+size = Vector2(10, 10)
+
 [node name="Dungeon" type="Node3D" unique_id=295580942]
 script = ExtResource("1_nulmw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1047848808]
+mesh = SubResource("PlaneMesh_miccs")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1182614573]
+transform = Transform3D(1, 0, 0, 0, 0.8422618, 0.5390687, 0, -0.5390687, 0.8422618, 0, 2.7789583, 6.3383393)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1418235009]
+transform = Transform3D(1, 0, 0, 0, -0.08252233, 0.9965892, 0, -0.9965892, -0.08252233, 0, 4.8292637, 0.6730509)

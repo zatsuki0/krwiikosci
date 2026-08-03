@@ -1,14 +1,25 @@
-extends Node
+extends Node3D
 class_name Dungeon
 
 var data: DungeonData
-
 var generator: DungeonGenerator
+@onready var dungeon_node = $GeneratedRooms
 
 var width: int
 var height: int
 
+'''
 func _init(width: int = 5, height: int = 5):
+	self.width = width
+	self.height = height
+
+	generator = DungeonGenerator.new(
+		width,
+		height
+	)
+'''
+
+func setup(width: int = 5, height: int = 5):
 	self.width = width
 	self.height = height
 
@@ -21,6 +32,10 @@ func _init(width: int = 5, height: int = 5):
 func generate():
 	data = await generator.generate()
 	return data
+
+
+func generate_node():
+	dungeon_node.generate(data.grid)
 
 
 func get_cell(pos: Vector2i) -> DungeonCell:

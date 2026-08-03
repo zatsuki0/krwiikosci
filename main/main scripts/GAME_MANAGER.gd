@@ -1,10 +1,10 @@
 extends Node
 
 #var player = Player.new()
-var dungeon: Dungeon
+var dungeon
 var minimap_scene = load("res://Minimap.tscn")
 var dungeon_scene = preload("res://Dungeon.tscn")
-var dungeon_map
+#var dungeon_map
 @onready var minimap = get_tree().current_scene.get_child(0).get_node("Minimap")
 
 var player_scene = preload("res://main scenes/player.tscn")
@@ -13,22 +13,22 @@ var player
 func _ready():
 	print("GameManager loaded")
 	
-	#generate dungeon
-	dungeon = Dungeon.new(5,5)
+	#generate dungeon and dungeon scene
+	#dungeon = Dungeon.new(5,5)
+	dungeon = dungeon_scene.instantiate()
+	get_tree().current_scene.add_child(dungeon)
+	dungeon.position = Vector3.ZERO
 	
+	dungeon.setup(5, 5)
 	minimap.generateMinimap(5, 5)
 	await dungeon.generate()
+	dungeon.generate_node()
 	minimap.updateMinimap(dungeon.data.grid)
-	
-	#create dungeon scene
-	dungeon_map = dungeon_scene.instantiate()
-	get_tree().current_scene.add_child(dungeon_map)
-	dungeon_map.position = Vector3.ZERO
 	
 	#create and add a player
 	player = player_scene.instantiate()
 	get_tree().current_scene.get_node("Dungeon").add_child(player)
-	player.position = Vector3.ZERO + Vector3(0, 1, 0)
+	player.position = Vector3i(2*8, 1, 2*8)
 	
 	player.setup("name", "human")
 	player.update_stats()

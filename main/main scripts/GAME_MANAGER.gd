@@ -5,6 +5,8 @@ var dungeon
 var minimap_scene = load("res://Minimap.tscn")
 var dungeon_scene = preload("res://Dungeon.tscn")
 #var dungeon_map
+#SA ADDITION v
+var battlescreen_scene = load("res://BattleScreeWIP made by yours truly/canvas_layer2.tscn")
 @onready var minimap = get_tree().current_scene.get_child(0).get_node("Minimap")
 
 var player_scene = preload("res://main scenes/player.tscn")
@@ -38,6 +40,11 @@ func _ready():
 	print("arm name: ", player.get_limb(LimbData.LimbType.ARM).data.display_name)
 	print("leg name: ", player.get_limb(LimbData.LimbType.LEG).data.display_name)
 	
+	#SA ADDITION v
+	
+	var bui = battlescreen_scene.instantiate()
+	add_child(bui)
+
 func enter_battle(enemy):
 	SceneManager.enter_battle(enemy)
 

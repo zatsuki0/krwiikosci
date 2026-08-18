@@ -1,0 +1,182 @@
+[gd_scene format=3 uid="uid://cijnt2pcl3b1g"]
+
+[ext_resource type="Script" uid="uid://c4r00fcu780u1" path="res://BattleScreeWIP made by yours truly/control.gd" id="1_jnfmy"]
+[ext_resource type="ButtonGroup" uid="uid://cx88blxgsh0jj" path="res://BattleScreeWIP made by yours truly/new_button_group_for_reasons_beyond.tres" id="1_tcsnp"]
+[ext_resource type="Texture2D" uid="uid://dln0btyvffwlc" path="res://BattleScreeWIP made by yours truly/png skill button templates/Headbutt Temp.png" id="3_ujfqf"]
+[ext_resource type="Texture2D" uid="uid://denrtgoex1smm" path="res://BattleScreeWIP made by yours truly/png skill button templates/bite Temp.png" id="4_i2gja"]
+[ext_resource type="Texture2D" uid="uid://dq2b13lfyndom" path="res://BattleScreeWIP made by yours truly/png skill button templates/numberthree Temp.png" id="5_njytk"]
+[ext_resource type="Texture2D" uid="uid://c6pqjt20todbi" path="res://BattleScreeWIP made by yours truly/png skill button templates/four Temp.png" id="6_bdtab"]
+[ext_resource type="Texture2D" uid="uid://bk5124joq52bl" path="res://BattleScreeWIP made by yours truly/png skill button templates/slap Temp.png" id="7_nb2ps"]
+[ext_resource type="Texture2D" uid="uid://dqowq78ky407p" path="res://BattleScreeWIP made by yours truly/png skill button templates/Fist Temp.png" id="8_eedk7"]
+[ext_resource type="Texture2D" uid="uid://d0ekbkogvs6bb" path="res://BattleScreeWIP made by yours truly/png skill button templates/scratch Temp.png" id="9_2hscm"]
+[ext_resource type="Texture2D" uid="uid://bqjvcov2upett" path="res://BattleScreeWIP made by yours truly/png skill button templates/sploorge clothesline Temp.png" id="10_u3hfm"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1622646792]
+
+[node name="Control" type="Control" parent="." unique_id=1310183681]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jnfmy")
+
+[node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=1210099351]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -68.0
+offset_right = 183.0
+offset_bottom = 68.0
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/PanelContainer" unique_id=802118685]
+layout_mode = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/PanelContainer/MarginContainer" unique_id=1343062859]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/PanelContainer/MarginContainer/VBoxContainer3" unique_id=1093633933]
+layout_mode = 2
+
+[node name="head" type="CheckButton" parent="Control/PanelContainer/MarginContainer/VBoxContainer3/CenterContainer" unique_id=369460324]
+layout_mode = 2
+button_group = ExtResource("1_tcsnp")
+text = "head"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control/PanelContainer/MarginContainer/VBoxContainer3" unique_id=2040522574]
+layout_mode = 2
+alignment = 1
+
+[node name="LeftColumn" type="VBoxContainer" parent="Control/PanelContainer/MarginContainer/VBoxContainer3/HBoxContainer2" unique_id=386444336]
+layout_mode = 2
+
+[node name="RightColumn" type="VBoxContainer" parent="Control/PanelContainer/MarginContainer/VBoxContainer3/HBoxContainer2" unique_id=417124314]
+layout_mode = 2
+
+[node name="CenterContainer2" type="CenterContainer" parent="Control/PanelContainer/MarginContainer/VBoxContainer3" unique_id=244894019]
+layout_mode = 2
+
+[node name="torso" type="CheckButton" parent="Control/PanelContainer/MarginContainer/VBoxContainer3/CenterContainer2" unique_id=1986841582]
+layout_mode = 2
+button_group = ExtResource("1_tcsnp")
+text = "torso"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/PanelContainer/MarginContainer/VBoxContainer3" unique_id=349953632]
+layout_mode = 2
+alignment = 1
+
+[node name="leg1L" type="CheckButton" parent="Control/PanelContainer/MarginContainer/VBoxContainer3/HBoxContainer" unique_id=1715073805]
+layout_mode = 2
+button_group = ExtResource("1_tcsnp")
+text = "Lleg"
+
+[node name="leg1R" type="CheckButton" parent="Control/PanelContainer/MarginContainer/VBoxContainer3/HBoxContainer" unique_id=1175624137]
+layout_mode = 2
+button_group = ExtResource("1_tcsnp")
+text = "Rleg"
+
+[node name="GridContainer" type="GridContainer" parent="Control" unique_id=1454944734]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 59.0
+offset_right = 587.0
+offset_bottom = 171.0
+columns = 2
+
+[node name="AddLeftButton" type="Button" parent="Control/GridContainer" unique_id=1552889723]
+layout_mode = 2
+text = "ADD
+LEFT ARM"
+
+[node name="AddRightButton" type="Button" parent="Control/GridContainer" unique_id=1362584559]
+layout_mode = 2
+text = "ADD
+RIGHT ARM"
+
+[node name="RemoveLeftButton" type="Button" parent="Control/GridContainer" unique_id=1321140724]
+layout_mode = 2
+text = "REMOVE
+LEFT ARM"
+
+[node name="RemoveRightButton" type="Button" parent="Control/GridContainer" unique_id=1567067839]
+layout_mode = 2
+text = "REMOVE
+RIGHT ARM"
+
+[node name="PanContSkills" type="PanelContainer" parent="Control" unique_id=1682375848]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/PanContSkills" unique_id=901103124]
+layout_mode = 2
+
+[node name="HBoxContainerHEAD" type="HBoxContainer" parent="Control/PanContSkills/MarginContainer" unique_id=455960428]
+visible = false
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerHEAD" unique_id=841963312]
+layout_mode = 2
+icon = ExtResource("3_ujfqf")
+
+[node name="CheckButton2" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerHEAD" unique_id=1182195944]
+layout_mode = 2
+icon = ExtResource("4_i2gja")
+
+[node name="CheckButton3" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerHEAD" unique_id=914564073]
+layout_mode = 2
+icon = ExtResource("5_njytk")
+
+[node name="CheckButton4" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerHEAD" unique_id=1468594738]
+layout_mode = 2
+icon = ExtResource("6_bdtab")
+
+[node name="HBoxContainerARM" type="HBoxContainer" parent="Control/PanContSkills/MarginContainer" unique_id=1051226574]
+visible = false
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerARM" unique_id=978179439]
+layout_mode = 2
+icon = ExtResource("7_nb2ps")
+
+[node name="CheckButton2" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerARM" unique_id=1923739606]
+layout_mode = 2
+icon = ExtResource("8_eedk7")
+
+[node name="CheckButton3" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerARM" unique_id=1722389047]
+layout_mode = 2
+icon = ExtResource("9_2hscm")
+
+[node name="CheckButton4" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerARM" unique_id=922524437]
+layout_mode = 2
+icon = ExtResource("10_u3hfm")
+
+[node name="HBoxContainerLEG" type="HBoxContainer" parent="Control/PanContSkills/MarginContainer" unique_id=1175841582]
+visible = false
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerLEG" unique_id=858062756]
+layout_mode = 2
+icon = ExtResource("5_njytk")
+
+[node name="CheckButton2" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerLEG" unique_id=574349606]
+layout_mode = 2
+icon = ExtResource("6_bdtab")
+
+[node name="CheckButton3" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerLEG" unique_id=1546623292]
+layout_mode = 2
+icon = ExtResource("6_bdtab")
+
+[node name="CheckButton4" type="CheckButton" parent="Control/PanContSkills/MarginContainer/HBoxContainerLEG" unique_id=1579592855]
+layout_mode = 2
+icon = ExtResource("5_njytk")
